@@ -1,5 +1,7 @@
 from fastapi import FastAPI, File, UploadFile, Form
 import os
+import date
+import re
 from fastapi import HTTPException
 app = FastAPI()
 candidates_db = []
@@ -15,13 +17,13 @@ async def health():
 
 # Temporary storage for candidate data [cite: 7]
 candidates_db = []
-
+re.match
 
 @app.post("/upload")
 async def upload_resume(
     full_name: str = Form(...),
-    dob: str = Form(...),
-    contact_number: str = Form(...),
+    dob: date = Form(...),
+    contact_number: int = Form(...),
     contact_address: str = Form(...),
     education_qualification: str = Form(...),
     graduation_year: int = Form(...),
