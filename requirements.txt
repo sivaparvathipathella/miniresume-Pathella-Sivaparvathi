@@ -1,0 +1,5 @@
+fastapi: The framework you used.
+
+uvicorn: The server that runs your code.
+
+python-multipart: Crucial! Since your code uses Form(...) and File(...), the code will crash without this library.
