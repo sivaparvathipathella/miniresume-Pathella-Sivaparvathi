@@ -43,8 +43,10 @@ python -m venv venv
 
 # Activate (Mac/Linux)
 source venv/bin/activate
+
 Step 3: Install Required Packages
 pip install -r requirements.txt
+
 4. How to Run the Application
 Start the development server with the following command:
 
